@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BuyFood">
+
+    <ImageView
+        android:id="@+id/image_food"
+        android:layout_width="wrap_content"
+        android:layout_height="275dp"
+        android:layout_marginTop="-5dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        />
+
+    <ImageButton
+        android:id="@+id/icon_thoat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/iconx"
+        android:alpha="1.0"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <RelativeLayout
+        android:id="@+id/layout_mane_food"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_food"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/name_food"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gà rán"
+            android:layout_marginStart="10dp"
+            android:textStyle="normal|bold"
+            android:textSize="26dp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_gia"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_food"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/layout_mane_food"
+        android:layout_marginLeft="100dp">
+
+        <TextView
+            android:id="@+id/gia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Gà rán"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/giaInt"
+        android:text="1000"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/icon_tang"
+        android:layout_below="@+id/layout_gia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <RelativeLayout
+        android:layout_toRightOf="@+id/icon_tang"
+        android:layout_below="@+id/layout_gia"
+        android:background="@color/white"
+        android:layout_marginStart="70dp"
+        android:layout_width="130dp"
+        android:layout_height="25dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_mane_food"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/icon_note"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_note"
+            android:layout_marginLeft="10dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/icon_note"
+            android:maxLength="100"
+            android:background="@null"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:hint="Bạn có muốn nhắn tới nhà hàng không?"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layout_home"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="635dp"
+        android:background="@drawable/while_backgroup_home" />
+
+    <ImageView
+            android:id="@+id/icon_giam"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="670dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/icon_tru"/>
+
+        <TextView
+            android:id="@+id/txt_soluong"
+            android:layout_marginTop="670dp"
+            android:text="1"
+            android:textSize="20dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:layout_toRightOf="@+id/icon_giam"/>
+
+
+    <ImageView
+        android:id="@+id/icon_tang"
+        android:layout_marginTop="670dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/txt_soluong"
+        android:background="@drawable/icon_cong"/>
+
+    <RelativeLayout
+        android:id="@+id/btn_tongtien"
+        android:layout_marginTop="670dp"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="70dp"
+        android:layout_toRightOf="@+id/icon_tang"
+        android:gravity="center"
+        android:background="@drawable/blue_backgound_them">
+
+        <TextView
+            android:id="@+id/them"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Thêm - "
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tongTien"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="100000"
+            android:layout_toRightOf="@+id/them"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tienTongInt"
+        android:text="1000"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/icon_tang"
+        android:layout_below="@+id/btn_tongtien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <requestFocus />
+<RelativeLayout
+    android:layout_toRightOf="@+id/icon_tang"
+    android:layout_below="@+id/btn_tongtien"
+    android:background="@color/white"
+    android:layout_marginStart="70dp"
+    android:layout_width="130dp"
+    android:layout_height="25dp"/>
+
+</RelativeLayout>

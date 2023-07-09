@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SaveFood">
+
+    <RelativeLayout
+        android:id="@+id/trangthanhtoan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/while_backgroup_home">
+
+        <TextView
+            android:text="Trang thanh toán"
+            android:textSize="26dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textStyle="normal|bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ImageButton
+            android:id="@+id/icon_back"
+            android:background="@drawable/icon_back"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_giaohang"
+        android:layout_width="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/trangthanhtoan"
+        android:background="@drawable/blue_backgound_them">
+
+        <ImageView
+            android:id="@+id/icon_giaohang"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:background="@drawable/giaohang_thanhtoan"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/txt_giaohang"
+        android:layout_below="@+id/trangthanhtoan"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:text="Giao bởi tài xế"
+        android:layout_toRightOf="@+id/layout_giaohang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/diachi"
+        android:text="69 Phạm Ngọc Thảo, Tây Thạnh, Tân Phú"
+        android:textSize="26dp"
+        android:layout_below="@+id/txt_giaohang"
+        android:layout_toRightOf="@+id/layout_giaohang"
+        android:layout_marginLeft="10dp"
+        android:textStyle="normal|bold"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/icon_diachi"
+        android:background="@drawable/icon_diachi"
+        android:layout_width="10dp"
+        android:layout_height="20dp"
+        android:layout_toRightOf="@+id/diachi"
+        android:layout_below="@+id/trangthanhtoan"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="5dp"/>
+
+    <RelativeLayout
+        android:id="@+id/layout_xacnhandiachi"
+        android:background="@drawable/blue_2"
+        android:layout_below="@+id/diachi"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/icon_vitri"
+            android:background="@drawable/vitri"
+            android:layout_marginStart="20dp"
+            android:layout_width="20dp"
+            android:layout_height="25dp"/>
+        <TextView
+            android:id="@+id/_txt_xacnhandiachi"
+            android:text="Bạn có chắc địa chỉ giao hàng chính xác?"
+            android:textStyle="normal|bold"
+            android:layout_toRightOf="@+id/icon_vitri"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/donhang"
+        android:text="Đơn hàng của bạn"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_below="@+id/layout_xacnhandiachi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ListView
+        android:id="@+id/rec_donhang"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:divider="@null"
+        android:layout_below="@+id/donhang"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="10dp" />
+    <TextView
+        android:id="@+id/themMon"
+        android:text="+ Thêm món"
+        android:textSize="15dp"
+        android:textColor="#32C1D3"
+        android:layout_marginStart="20dp"
+        android:layout_below="@+id/rec_donhang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:id="@+id/line1"
+        android:background="#F2F4F0"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/themMon"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+    <RelativeLayout
+        android:id="@+id/tip"
+        android:layout_below="@+id/line1"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/purple_fill_rounded_color"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/moi"
+            android:textColor="@color/white"
+            android:text="Mới"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/tip"
+        android:layout_below="@+id/line1"
+        android:layout_marginStart="5dp"
+        android:text="Tip thêm cho tài xế nhé"
+        android:textStyle="normal|bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/txt_note_tip"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="20dp"
+        android:layout_below="@+id/tip"
+        android:text="Tài xế sẽ nhận được 100% tiền tip từ bạn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/backgroud_1"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:background="@drawable/grey_backgroud_10dp"
+        android:layout_below="@+id/txt_note_tip"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:text="Dùng phương thức thanh toán không tiền mặt để tip cho tài xế"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:layout_marginTop="-10dp"
+        android:layout_marginStart="10dp"
+        android:layout_toRightOf="@+id/backgroud_1"
+        android:layout_below="@+id/txt_note_tip"
+        android:background="@drawable/giaohang_tip"
+        android:layout_width="100dp"
+        android:layout_height="80dp"/>
+
+    <RelativeLayout
+        android:id="@+id/line2"
+        android:background="#F2F4F0"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/backgroud_1"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+
+    <RelativeLayout
+        android:id="@+id/phuongthucthanhtoan"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/dong"
+            android:layout_marginStart="20dp"
+            android:text="đ"
+            android:background="@drawable/khung"
+            android:gravity="center"
+            android:layout_width="30dp"
+            android:layout_height="20dp"/>
+        <TextView
+            android:id="@+id/cachthanhtoan"
+            android:layout_toRightOf="@+id/dong"
+            android:text="Tiền mặt"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/btn_cachthanhtoan"
+            android:background="@drawable/chuyencachthanhtoan"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/cachthanhtoan"
+            android:layout_width="20dp"
+            android:layout_height="10dp"/>
+
+        <RelativeLayout
+            android:id="@+id/line4"
+            android:layout_marginTop="-7dp"
+            android:layout_marginStart="20dp"
+            android:layout_toRightOf="@+id/btn_cachthanhtoan"
+            android:background="#B3B5B8"
+            android:layout_width="1dp"
+            android:layout_height="30dp"/>
+
+        <TextView
+            android:id="@+id/themcoupon"
+            android:layout_marginStart="50dp"
+            android:layout_toRightOf="@+id/line4"
+            android:textColor="#76A6D6"
+            android:text="THÊM COUPON"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tongTienThanhToan"
+        android:text="250000"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="20dp"
+        android:layout_below="@+id/phuongthucthanhtoan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_thanhtoan"
+        android:text="Đặt hàng"
+        android:textSize="18dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="190dp"
+        android:layout_below="@+id/phuongthucthanhtoan"
+        android:layout_width="180dp"
+        android:layout_height="50dp"/>
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center">
+
+        <TextView
+            android:textSize="26dp"
+            android:text="Đơn Hàng Cần Xử Lý"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <ImageButton
+        android:id="@+id/icon_back"
+        android:background="@drawable/icon_back"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"/>
+
+    <RelativeLayout
+        android:id="@+id/line1"
+        android:layout_below="@+id/layout_1"
+        android:background="#E0E3E4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <TextView
+        android:id="@+id/txt_donhang"
+        android:text="Đơn hàng: "
+        android:textSize="26dp"
+        android:layout_below="@+id/line1"
+        android:layout_marginStart="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/txt_ngay"
+        android:text=""
+        android:textSize="26dp"
+        android:layout_toRightOf="@+id/txt_donhang"
+        android:textColor="#66A5E4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ListView
+        android:id="@+id/lst_donhang_admin"
+        android:layout_below="@+id/txt_donhang"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="20dp"
+        android:divider="@null"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+    <TextView
+        android:id="@+id/txt_tongtien"
+        android:layout_below="@+id/lst_donhang_admin"
+        android:text="Tổng tiền: "
+        android:textSize="26dp"
+        android:layout_marginStart="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tongtien"
+        android:text="0đ"
+        android:textSize="26dp"
+        android:layout_toRightOf="@+id/txt_tongtien"
+        android:layout_below="@+id/lst_donhang_admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/hoantat"
+        android:text="Hoàn tất"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:layout_below="@+id/tongtien"
+        android:layout_marginStart="230dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

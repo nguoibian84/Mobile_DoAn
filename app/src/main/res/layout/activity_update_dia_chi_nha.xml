@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateDiaChiNhaActivity">
+
+    <RelativeLayout
+        android:id="@+id/layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center">
+
+        <TextView
+            android:textSize="26dp"
+            android:text="Sửa địa chỉ"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/icon_back"
+        android:background="@drawable/icon_back"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"/>
+
+    <RelativeLayout
+        android:id="@+id/layout_2"
+        android:layout_below="@+id/layout_1"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/ten"
+            android:text="Tên*"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/txt_ten"
+            android:layout_below="@+id/ten"
+            android:hint="Home"
+            android:fontFamily="@font/poppins_regular"
+            android:maxLines="1"
+            android:layout_marginEnd="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/diachi"
+            android:layout_below="@+id/txt_ten"
+            android:text="Địa chỉ"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/txt_diachi"
+            android:layout_below="@+id/diachi"
+            android:hint="Địa chỉ"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/poppins_regular"
+            android:maxLines="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/chitiet"
+            android:layout_below="@+id/txt_diachi"
+            android:text="VD: Vào trong hẻm kế bên trường học"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/txt_chitiet"
+            android:layout_below="@+id/chitiet"
+            android:hint="Ghi chú cho tài xế "
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/poppins_regular"
+            android:maxLines="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <Button
+        android:id="@+id/btn_luu"
+        android:layout_below="@+id/layout_2"
+        android:layout_width="match_parent"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="350dp"
+        android:text="Lưu địa chỉ"
+        android:padding="15dp"
+        android:layout_marginEnd="40dp"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

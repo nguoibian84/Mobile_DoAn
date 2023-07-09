@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/soluong_donhang"
+        android:text="1"
+        android:textSize="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/icon_x"
+        android:text="x"
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/soluong_donhang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tenMonAn_donhang"
+        android:text="Gà rán"
+        android:textSize="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_toRightOf="@+id/icon_x"
+        android:textStyle="normal|bold"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tongTien_donhang"
+        android:text="25000"
+        android:textSize="20dp"
+        android:layout_marginStart="250dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/btn_xoa"
+        android:background="@drawable/iconx"
+        android:layout_marginTop="3dp"
+        android:layout_marginStart="360dp"
+        android:layout_width="20dp"
+        android:layout_height="20dp"/>
+</RelativeLayout>
